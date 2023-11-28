@@ -457,7 +457,7 @@ class _WelcomeState extends State<Welcome> {
          // title: Text('Success!'),
           content: Container(
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(30)
+              borderRadius: BorderRadius.circular(40)
             ),
             width: double.infinity,
             height: 250,
