@@ -14,28 +14,41 @@ class _PasswordState extends State<Password> {
   String enteredPin = '';
 
    /// this widget will be use for each digit
-  Widget numButton(int number) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 16),
-      child: TextButton(
-        onPressed: () {
-          setState(() {
-            if (enteredPin.length < 4) {
-              enteredPin += number.toString();
-            }
-          });
-        },
-        child: Text(
-          number.toString(),
-          style: const TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.w600,
-            color: Colors.black,
+ Widget numButton(int number) {
+  return Column(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+      Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          TextButton(
+            onPressed: () {
+              setState(() {
+                if (enteredPin.length < 4) {
+                  enteredPin += number.toString();
+                }
+              });
+            },
+            child: Text(
+              number.toString(),
+              style: const TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.w600,
+                color: Colors.black,
+              ),
+            ),
           ),
-        ),
+        ],
       ),
-    );
-  }
+      Divider(
+        height: 8, // You can adjust the height of the divider
+        thickness: 2, // You can adjust the thickness of the divider
+        color: Colors.black, // You can adjust the color of the divider
+      ),
+    ],
+  );
+}
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -45,6 +58,8 @@ class _PasswordState extends State<Password> {
           child: Column(
             children: [
               Image.asset('images/password.png'),
+               SizedBox(width: 30,),
+
               TitleText(
                 textAlign: TextAlign.center,
                 data: 'Choisissez 4 chiffre pour votre mot de passe',
@@ -84,7 +99,7 @@ class _PasswordState extends State<Password> {
                 },
               ),
               SizedBox(
-                height: 20,
+                height: 30,
               ),
                /// digits
               for (var i = 0; i < 3; i++)
