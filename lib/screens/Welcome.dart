@@ -5,7 +5,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:pinput/pinput.dart';
 import 'package:ter/globals/colors.dart';
 import 'package:ter/main.dart';
-import 'package:ter/screens/password.dart';
+import 'package:ter/screens/Password.dart';
 import 'package:ter/utils/title.dart';
 import 'package:ter/utils/titleoption.dart';
 import 'package:ter/widgets/CustomButton.dart';

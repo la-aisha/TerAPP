@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ter/screens/SplashScreen.dart';
 import 'package:ter/screens/Welcome.dart';
+import 'package:ter/screens/Password.dart';
+
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +17,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: Welcome(),
+      home: Password(),
       
     );
   }
