@@ -75,6 +75,7 @@ class _PasswordState extends State<Password> {
                 color: Colors.white,
               ),
               child: Column(children: [
+                SizedBox(height: 20,),
                 TitleText(
                   data: 'Votre mot de passe est',
                   color: Colors.black,
@@ -94,9 +95,9 @@ class _PasswordState extends State<Password> {
                   children: [
                     ElevatedButton(
                       onPressed: () {
-                        setState(() {
+                       /*  setState(() {
                           pinInputController.text = "";
-                        });
+                        }); */
                         Navigator.of(context).pop();
                       },
                       style: ButtonStyle(

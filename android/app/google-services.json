@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "600986156818",
+    "project_id": "terapp-10b77",
+    "storage_bucket": "terapp-10b77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:600986156818:android:e343e84bffe6fa9c4afdcb",
+        "android_client_info": {
+          "package_name": "com.example.ter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkOWr9HHi_U4eEFoMz4hQVO2ushPSzMJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
